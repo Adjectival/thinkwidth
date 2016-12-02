@@ -1,5 +1,5 @@
-# Think with Resizing ![screenshot](images/favicon.png)
-## _A Responsive Layout demo that riffs on Think with Google_
+# Think with Resizin![screenshot](images/favicon.png)
+## _A Responsive Layout demo that mocks up Think with Google_
 ### By _Alexander Jacks_
 _an Epicodus student Project, 2 December 2016_
 
@@ -12,13 +12,19 @@ Think with Resizing closely copies the flexible, responsive layout of [Think wit
 # User Stories
 - I want to replicate the responsive top section of [Think with Google](https://www.thinkwithgoogle.com/). Note: Navigation bar is optional.
 
- - I want relative units used where appropriate.
-
- - I want page layout to respond to at least three different screen sizes.
-
  - I want fluid images.
 
- - I do not need to use the same styling/code techniques as their actual website, nor the same fonts/assets.
+ - I want relative units used where appropriate.
+
+ - I want bespoke media queries.
+
+ - I want page layout to respond to at least three different screen sizes.
+   - Mobile S (320px width)
+   - Tablet (768px width)
+   - Laptop (1024px width)
+
+ - I do not need to see the same styling/code techniques as the actual website, nor the same fonts/assets.
+
 - Project is in a polished, portfolio-quality state.
 
 
