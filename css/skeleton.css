@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Media Queries
 - Grid
 - Base Styles
 - Typography
@@ -22,7 +23,6 @@
 - Spacing
 - Utilities
 - Clearing
-- Media Queries
 */
 
 /* For testing only  - Leroi Dejesa */
@@ -33,93 +33,76 @@
   border-left: 1px dashed #00f;*/
   /*border-bottom:1px dashed #00f;*/
 }
-
-
-/*.columns {
-  min-height: 100px;
-}*/
-
-
 /* End for testing */
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* For devices Mobile S or smaller */
+@media screen and (max-width: 320px) {
+  nav {
+    background-color: teal;
+    height: 80px;
+  }
+  h1 {
+    font-family: cursive;
+    font-size: 18px;
+  }
+  img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+/* For devices larger than Mobile S */
+@media screen and (min-width: 321px) {
+  nav {
+    background-color: greenyellow;
+  }
+  img {
+    width:100vw;
+    height: auto;
+  }
+}
+
+/* For devices larger than Tablet */
+@media screen and (min-width: 769px) {
+  nav {
+    background-color: wheat;
+  }
+  img {
+    width:100vw;
+    height: auto;
+  }
+}
+
+
+/* Grid –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  /*max-width: 960px;*/
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  padding: 0;
+  box-sizing: border-box;
+}
 .column,
 .columns {
   width: 100%;
   float: left;
   box-sizing: border-box; }
-
-nav h3 {
-  font-family: cursive;
-
-}
-
-/* For devices Mobile S or smaller */
-@media screen and (max-width: 320px) {
-  body {
-    background-color: teal;
-  }
-  .container .row {
-    width: 100%;
-    padding: 0;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-  /* For devices larger than Mobile S */
-@media screen and (min-width: 321px) {
-  body {
-    background-color: greenyellow;
-  }
-  img {
-    width:100%;
-    height: auto;
-  }
-}
-/* For devices larger than Tablet */
-@media screen and (min-width: 769px) {
-  body {
-    background-color: wheat;
-  }
-  img {
-    width:100%;
-    height: auto;
-  }
-}
-/* For devices larger than Tablet */
-@media screen and (min-width: 769px) {
-  body {
-    background-color: white;
-  }
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
+.column:first-child,
+.columns:first-child {
     margin-left: 0; }
 
   .one.column,
-  .one.columns{ width: 4.66666666667%; }
-  .two.columns{ width: 13.3333333333%; }
-  .three.columns{ width: 22%;            }
+  .one.columns{ width: 4.66666666667%;}
+  .two.columns{ width: 13.3333333333%;}
+  .three.columns{ width: 22%;}
   .four.columns { width: 30.6666666667%; }
   .five.columns { width: 39.3333333333%; }
-  .six.columns{ width: 48%;            }
+  .six.columns{ width: 48%;}
   .seven.columns{ width: 56.6666666667%; }
   .eight.columns{ width: 65.3333333333%; }
-  .nine.columns { width: 74.0%;          }
+  .nine.columns { width: 74.0%;}
   .ten.columns{ width: 82.6666666667%; }
   .eleven.columns{ width: 91.3333333333%; }
   .twelve.columns{ width: 100%; margin-left: 0; }
@@ -129,35 +112,35 @@ nav h3 {
 
   /* Offsets */
   .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-one.columns{ margin-left: 8.66666666667%; }
   .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-two.columns{ margin-left: 17.3333333333%; }
   .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-three.columns{ margin-left: 26%;   }
   .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-four.columns { margin-left: 34.6666666667%; }
   .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-five.columns { margin-left: 43.3333333333%; }
   .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-six.columns  { margin-left: 52%;   }
   .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-seven.columns{ margin-left: 60.6666666667%; }
   .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-eight.columns{ margin-left: 69.3333333333%; }
   .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-nine.columns { margin-left: 78.0%; }
   .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-ten.columns  { margin-left: 86.6666666667%; }
   .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+  .offset-by-eleven.columns{ margin-left: 95.3333333333%; }
 
   .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-one-third.columns{ margin-left: 34.6666666667%; }
   .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+  .offset-by-two-thirds.columns{ margin-left: 69.3333333333%; }
 
   .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
+  .offset-by-one-half.columns{ margin-left: 52%; }
 
 }
 
@@ -189,21 +172,16 @@ h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
-
-p {
-  margin-top: 0; }
+p { margin-top: 0; }
 
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Links –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1EAEDB; }
 a:hover {
   color: #0FA0CE; }
 
-
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Buttons –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
 input[type="submit"],
@@ -262,8 +240,7 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB; }
 
 
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Forms –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -291,7 +268,7 @@ input[type="password"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+     appearance: none; }
 textarea {
   min-height: 65px;
   padding-top: 6px;
@@ -324,8 +301,7 @@ label > .label-body {
   font-weight: normal; }
 
 
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Lists –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle inside; }
 ol {
@@ -343,8 +319,7 @@ li {
   margin-bottom: 1rem; }
 
 
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Code –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -359,8 +334,7 @@ pre > code {
   white-space: pre; }
 
 
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Tables –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
   padding: 12px 15px;
@@ -374,8 +348,7 @@ td:last-child {
   padding-right: 0; }
 
 
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Spacing –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
   margin-bottom: 1rem; }
@@ -396,8 +369,7 @@ form {
   margin-bottom: 2.5rem; }
 
 
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Utilities –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -410,16 +382,14 @@ form {
   float: left; }
 
 
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Misc –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Clearing –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
 .container:after,
@@ -428,17 +398,3 @@ hr {
   content: "";
   display: table;
   clear: both; }
-
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* Mobile S */
-@media (min-width: 321px) {}
-
-/* Tablet larger than Mobile S (also point when grid becomes active) */
-@media (min-width: 321px) {}
-
-/* Larger than tablet */
-@media (min-width: 1024px) {}
