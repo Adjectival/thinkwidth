@@ -35,6 +35,14 @@
 }
 /* End for testing */
 
+
+/*Working codelets*/
+
+span {
+  content: "";
+  background-image: url('images/y0_vfxohayg-wesson-wang.jpg');
+}
+
 /* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* For devices Mobile S or smaller */
 @media screen and (max-width: 320px) {
@@ -43,8 +51,8 @@
     height: 80px;
   }
   h1 {
-    font-family: cursive;
-    font-size: 18px;
+    font-family: serif;
+    font-stretch: extra-expanded;
   }
   img {
     width: 100vw;
