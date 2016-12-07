@@ -1,7 +1,7 @@
 # Think with Resizin![screenshot](images/favicon.png)
 ## _A Responsive Layout demo that mocks up Think with Google_
 ### By _Alexander Jacks_
-_an Epicodus student Project, 2 December 2016_
+_an Epicodus student Project, December 2016_
 
 ### Description
 Think with Resizing closely copies the flexible, responsive layout of [Think with Google](https://www.thinkwithgoogle.com/) as a demonstration of my front-end design chops.
