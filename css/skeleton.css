@@ -29,13 +29,16 @@
   top: 0px;
   left: 10px;
 }
-.oneth {
-  background-image: url('images/y0_vfxohayg-wesson-wang.jpg');
-  position: relative;
+
+.top-pic {
+  transform: scale(1.5, 1.5);
 }
-.oneth::after {
-  position: absolute;
+.top-cap {
+  width: 90%;
+  height: 45%;
+  background-color: #444;  
 }
+
 /* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* For devices Mobile S or smaller */
 
