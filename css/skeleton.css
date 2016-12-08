@@ -90,19 +90,33 @@ background-color: pink}
     color: #bbb;
     height: 70px;
     line-height: 70px;
-    letter-spacing: 0.05px;
-    font-size: 23px;
-    font-weight: lighter;
+    letter-spacing: 0.1px;
+    font-size: 21px;
+    font-weight: 100;
   }
   div p span {
     font-weight: 400;
     color: #888;
   }
   #Glogo {
-    position: absolute;
     width: 80px;
-    top: 40px;
-    left:50%;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  #Search {
+    width: 20px;
+    position: absolute;
+    right: 60px;
+    top: 35px;
+    transform: translate(-50%,-50%);
+  }
+  #Menu {
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    top: 35px;
     transform: translate(-50%,-50%);
   }
   img {
