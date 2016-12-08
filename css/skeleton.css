@@ -40,15 +40,20 @@
   border: 1px solid #ccc;
   z-index: 1000;
 }
-div h3 {
-  left: 10px;
+div p {
+  position: absolute;
+  left: 20px;
+  color: #bbb;
   height: 70px;
   line-height: 70px;
 }
-div h3 span {
+div p span {
   font-weight: 400;
+  color: #888;
 }
-
+#Glogo {
+  width: 110px;
+}
 .top-box {
   position: relative;
   transform: scale(1,0.8);
@@ -57,7 +62,7 @@ div h3 span {
   z-index: 0;
 }
 .top-pic {
-  position: absolute;;
+  position: absolute;
   left: 0;
   top: 0;
   height: 400px;
@@ -116,7 +121,7 @@ And I tweaked this to 40% to effectively mock up think with Google*/
 html {
   font-size: 40%; }
 body {
-  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 100;
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -136,8 +141,8 @@ h4, h5, h6 {font-family: 'Source Sans Pro';}
 h2 { font-size: 3.6em; line-height: 1.25; letter-spacing: -.1em; }*/
 h3 { font-size: 3em; line-height: 2.7em;  letter-spacing: .08em; }
 h4 { font-size: 1.8em; line-height: 1.8em; letter-spacing: .01em; }
-h5 { font-size: 1.5em; line-height: 1.5em;  letter-spacing: -.05em; }
-h6 { font-size: 1.3em; line-height: 1.3em;  letter-spacing: 0; }
+h5 { font-size: 1.7em; line-height: 1.7em;  letter-spacing: -.05em; }
+h6 { font-size: 1.4em; line-height: 1.4em;  letter-spacing: 0; }
 p { margin-top: 0; }
 /* Links –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a { color: #1EAEDB; }
