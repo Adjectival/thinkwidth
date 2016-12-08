@@ -15,7 +15,9 @@ body {
   line-height: 1.5;
   font-weight: 100;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #222; }
+  color: #222;
+  background-color: pink
+}
 
 /* Typography */
 /*p { font-size: 3em; line-height: 2.7em;  letter-spacing: .08em; }*/
@@ -24,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto';
   margin-top: 0;
   margin-bottom: 0em;
-  color: DarkOrange;
+  color: red;
   }
 h5, h6 {font-family: 'Source Sans Pro';}
 /*h1 { font-size: 4.0em; line-height: 1.2;  letter-spacing: -.1em;}
@@ -40,12 +42,10 @@ a { color: #1EAEDB; }
 a:hover { color: #0FA0CE; }
 
 /*Layout*/
-div div {
-background-color: pink}
 
 .nav {
-  position: static;
   background: #fff;
+  width: 320px;
   height: 70px;
   border: 1px solid #ccc;
   margin-bottom: 0px;
@@ -53,93 +53,69 @@ background-color: pink}
 }
 
 .top-box {
-  position: relative;
-  height: 55vh;
-  width: 100vw;
   z-index: 0;
 }
 
 .top-pic {
-  position: absolute;
-  /*top: 0;
-  transform: scale(0.5,0.5);*/
-  width: 100%;
-  height: 100%;
   background-image: url("../images/y0_vfxohayg-wesson-wang.jpg");
+  width:100vw;
   background-size: cover;
   /*transform: translate(-50%,-50%);*/
   z-index: 1;
 }
 .top-cap {
-  position: absolute;
-  width: 85%;
-  left: 8vw;
-  bottom: 20px;
-  height: auto;
   background-color: #444;
-  padding: 10px;
   z-index: 100;
 }
 
 .mid-pic {
-  float:left;
-  width: 100%;
-  height: 100%;
   background-image: url("../images/gwvmbgpp-pq-steinar-la-engeland.jpg");
+  width:100vw;
   background-size: cover;
 }
 .end-pic {
-  float:left;
-  width: 100%;
-  height: 100%;
   background-image: url("../images/rhvd9wlno_i-niklas-veenhuis.jpg");
+  width:100vw;
   background-size: cover;
 }
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav > div {
+  display: inline;
+  line-height: 70px;
+  top: 35px;
+}
+
+/* Modules */
+#Glogo {
+  width: 80px;
+  /*top: 35px;
+  left: 70%;
+  transform: translate(-50%,-50%);*/
+}
+#Search {
+  width: 20px;
+  /*right: 60px;
+  top: 35px;
+  transform: translate(-50%,-50%);*/
+}
+#Menu {
+  width: 30px;
+  /*right: 5px;
+  top: 35px;
+  transform: translate(-50%,-50%);*/
+}
+
 
 /* Media Queries */
 /* For devices Mobile S or smaller */
 
 @media screen and (max-width: 320px) {
   /*navbar*/
-  div p {
-    position: absolute;
-    left: 20px;
-    color: #bbb;
-    height: 70px;
-    line-height: 70px;
-    letter-spacing: 0.1px;
-    font-size: 21px;
-    font-weight: 100;
-  }
-  div p span {
-    font-weight: 400;
-    color: #888;
-  }
-  #Glogo {
-    width: 80px;
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  #Search {
-    width: 20px;
-    position: absolute;
-    right: 60px;
-    top: 35px;
-    transform: translate(-50%,-50%);
-  }
-  #Menu {
-    width: 30px;
-    position: absolute;
-    right: 5px;
-    top: 35px;
-    transform: translate(-50%,-50%);
-  }
-  img {
-    width: 100vw;
-    height: auto;
-  }
+
+
 }
 
 /* For devices larger than Mobile S */
