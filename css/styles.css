@@ -1,15 +1,16 @@
-/* For testing only  - Leroi Dejesa */
-*:not(body):not(html) {
-  box-sizing:border-box;
-  /*border-right: 1px dashed #00f;
-  border-left: 1px dashed #00f;*/
-  /*border-bottom:1px dashed #00f;*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
-/* End for testing */
 
 /* Base Styles */
 html {
-  font-size: 40%; }
+  font-size: 60%; }
 body {
   font-size: 1.5em;
   line-height: 1.5;
@@ -20,24 +21,15 @@ body {
 }
 
 /* Typography */
-/*p { font-size: 3em; line-height: 2.7em;  letter-spacing: .08em; }*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto';
-  margin-top: 0;
-  margin-bottom: 0em;
+  /*margin-top: 0;
+  margin-bottom: 0em;*/
   color: red;
   }
-h5, h6 {font-family: 'Source Sans Pro';}
-/*h1 { font-size: 4.0em; line-height: 1.2;  letter-spacing: -.1em;}
-h2 { font-size: 3.6em; line-height: 1.25; letter-spacing: -.1em; }*/
-h3 { font-size: 3em; line-height: 2.7em;  letter-spacing: .08em; }
-h4 { font-size: 2.2em; line-height: 1.2em; letter-spacing: .01em; }
-h5 { font-size: 1.7em; line-height: 1.7em;  letter-spacing: -.05em; }
-h6 { font-size: 1.4em; line-height: 1.4em;  letter-spacing: 0; }
-p { margin-top: 0; }
+h4, h5, h6 {font-family: 'Source Sans Pro';}
 
-/* Links  */
 a { color: #1EAEDB; }
 a:hover { color: #0FA0CE; }
 
@@ -58,8 +50,8 @@ a:hover { color: #0FA0CE; }
 
 .top-pic {
   background-image: url("../images/y0_vfxohayg-wesson-wang.jpg");
-  width:100vw;
-  background-size: cover;
+  width:100px;
+  /*background-size: cover;*/
   /*transform: translate(-50%,-50%);*/
   z-index: 1;
 }
@@ -70,13 +62,13 @@ a:hover { color: #0FA0CE; }
 
 .mid-pic {
   background-image: url("../images/gwvmbgpp-pq-steinar-la-engeland.jpg");
-  width:100vw;
-  background-size: cover;
+  width:100px;
+  /*background-size: cover;*/
 }
 .end-pic {
   background-image: url("../images/rhvd9wlno_i-niklas-veenhuis.jpg");
-  width:100vw;
-  background-size: cover;
+  width:100px;
+  /*background-size: cover;*/
 }
 .nav {
   display: flex;
@@ -88,54 +80,43 @@ a:hover { color: #0FA0CE; }
   top: 35px;
 }
 
-/* Modules */
-#Glogo {
-  width: 80px;
-  /*top: 35px;
-  left: 70%;
-  transform: translate(-50%,-50%);*/
-}
-#Search {
-  width: 20px;
-  /*right: 60px;
-  top: 35px;
-  transform: translate(-50%,-50%);*/
-}
-#Menu {
-  width: 30px;
-  /*right: 5px;
-  top: 35px;
-  transform: translate(-50%,-50%);*/
-}
+/* Custom styles */
+#Glogo { width: 85px;
+  padding-right: 10px;
+ }
+#Search { width: 20px; }
+#Menu { width: 30px; }
 
 
 /* Media Queries */
 /* For devices Mobile S or smaller */
 
 @media screen and (max-width: 320px) {
-  /*navbar*/
+  .nav {
+    background-color: white;
+  }
 
 
 }
 
 /* For devices larger than Mobile S */
 @media screen and (min-width: 321px) {
-  #nav {
+  .nav {
     background-color: greenyellow;
   }
-  img {
+  /*img {
     width:100vw;
     height: auto;
-  }
+  }*/
 }
 
 /* For devices larger than Tablet */
 @media screen and (min-width: 769px) {
-  #nav {
+  .nav {
     background-color: wheat;
   }
-  img {
+  /*img {
     width:100vw;
     height: auto;
-  }
+  }*/
 }
