@@ -23,17 +23,18 @@
   float: left;
 }
 .w34 {
-  width: 34vw;
-  float: left;
+  /*width: 34vw;
+  float: left;*/
 }
 .w66 {
-  width: 66vw;
-  float: left;
+  /*width: 66vw;
+  float: left;*/
   height: 8.3em;
   line-height: 8.3em;
   background-color: #ccc;
 }
 .nav {
+  position: static;
   background: #fff;
   height: 70px;
   border: 1px solid #ccc;
@@ -48,9 +49,17 @@ div h3 span {
   font-weight: 400;
 }
 
-.top-pic {
+.top-box {
   position: relative;
-  transform: scale(1.3,1);
+  transform: scale(1,0.8);
+  height: 400px;
+  width: 100vw;
+  z-index: 0;
+}
+.top-pic {
+  position: absolute;;
+  left: 0;
+  top: 0;
   height: 400px;
   width: 100vw;
   z-index: 0;
@@ -58,9 +67,12 @@ div h3 span {
 .top-cap {
   position: absolute;
   width: 70%;
+  left: 150px;
+  top: 200px;
   height: auto;
   background-color: #444;
   left: 20vw;
+  z-index: 100;
 }
 
 /* Media Queries –––––––––––––––––––––––––––––––––––––––––––––––––– */
