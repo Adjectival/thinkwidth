@@ -18,15 +18,14 @@
 
 
 /*Layout*/
+div div {
+background-color: pink}
 .w100 {
   width: 100vw;
   float: left;
+  padding: 0;
 }
-.w34 {
-  /*width: 34vw;
-  float: left;*/
-  /*padding: 10px;*/
-}
+
 .w66 {
   /*width: 66vw;
   float: left;*/
@@ -42,20 +41,7 @@
   border: 1px solid #ccc;
   z-index: 1000;
 }
-div p {
-  position: absolute;
-  left: 20px;
-  color: #bbb;
-  height: 70px;
-  line-height: 70px;
-}
-div p span {
-  font-weight: 400;
-  color: #888;
-}
-#Glogo {
-  width: 110px;
-}
+
 .top-box {
   position: relative;
   transform: scale(1,0.8);
@@ -86,6 +72,28 @@ div p span {
 /* For devices Mobile S or smaller */
 
 @media screen and (max-width: 320px) {
+  /*navbar*/
+  div p {
+    position: absolute;
+    left: 20px;
+    color: #bbb;
+    height: 70px;
+    line-height: 70px;
+    letter-spacing: 0.05px;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  div p span {
+    font-weight: 400;
+    color: #888;
+  }
+  #Glogo {
+    position: absolute;
+    width: 80px;
+    top: 40px;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
   img {
     width: 100vw;
     height: auto;
@@ -132,7 +140,7 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-p { font-size: 3em; line-height: 2.7em;  letter-spacing: .08em; }
+/*p { font-size: 3em; line-height: 2.7em;  letter-spacing: .08em; }*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto';
@@ -152,7 +160,7 @@ p { margin-top: 0; }
 a { color: #1EAEDB; }
 a:hover { color: #0FA0CE; }
 /* Buttons –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button,button,input[type="submit"],input[type="reset"],input[type="button"] {
+/*.button,button,input[type="submit"],input[type="reset"],input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -181,13 +189,12 @@ a:hover { color: #0FA0CE; }
 .button.button-primary:hover,button.button-primary:hover,input[type="submit"].button-primary:hover,input[type="reset"].button-primary:hover,input[type="button"].button-primary:hover,.button.button-primary:focus,button.button-primary:focus,input[type="submit"].button-primary:focus,input[type="reset"],.button-primary:focus,input[type="button"],.button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  border-color: #1EAEDB; }*/
 
   /* Grid –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .container {
     position: relative;
     width: 100%;
-    /*max-width: 960px;*/
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
