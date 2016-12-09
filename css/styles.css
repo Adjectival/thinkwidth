@@ -19,7 +19,11 @@ body {
   color: #222;
   background-color: pink
 }
-
+.container, div {
+  padding: 0;
+}
+.row {
+}
 /* Typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,15 +41,17 @@ a:hover { color: #0FA0CE; }
 
 .nav {
   background: #fff;
-  width: 320px;
   height: 70px;
   border: 1px solid #ccc;
-  margin-bottom: 0px;
+  margin: 0px;
   z-index: 1000;
 }
 
 .top-box {
+  padding: 0;
   z-index: 0;
+}
+.top-box > div {
 }
 
 .top-pic {
