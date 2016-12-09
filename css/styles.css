@@ -8,7 +8,7 @@
   padding:0;
 }
 
-* {border: 1px dotted blue;}
+/** {border: 1px dotted blue;}*/
 
 /* Base Styles */
 html {
@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   font-weight: 100;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #222;
+  color: #eee;
   background-color: pink
 }
 .container, div {
@@ -29,12 +29,24 @@ body {
 }*/
 /* Typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: 'Roboto';
   /*margin-top: 0;
   margin-bottom: 0em;*/
-  color: red;
+  /*color: #eee;*/
   }
+h3 {
+  color: #666;
+}
+span {
+  color: #999;
+}
+h4 {font-size: 1.4em;
+line-height: 1.4em;
+font-stretch: expanded;}
+h5 {font-size: 1.2em;
+line-height: 1.2em;
+font-stretch: expanded;}
 h4, h5, h6 {font-family: 'Source Sans Pro';}
 
 a { color: #1EAEDB; }
@@ -57,9 +69,9 @@ a:hover { color: #0FA0CE; }
 
 .top-pic {
   background-image: url("../images/y0_vfxohayg-wesson-wang.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 20em;
+  background-size: 150%;
+  background-position: center top;
+  height: 27em;
   z-index: 1;
   position: relative;
 }
@@ -68,17 +80,35 @@ a:hover { color: #0FA0CE; }
   bottom: 2em;
   left: 5%;
   width: 90%;
-  background-color: #444;
+  padding: 1em;
+  background-color: #0e1c5e;
   z-index: 100;
 }
-
+.row {
+  height: 9em;
+  margin: 0;
+  padding:0;
+}
 .mid-pic {
   background-image: url("../images/gwvmbgpp-pq-steinar-la-engeland.jpg");
-  height: 6em;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  height: 9em;
+  padding: 0;
+}
+.mid-cap {
+  background-color: #995e8d;
+  height: 9em;
+}
+.end-cap {
+  background-color: #4e4a52;
+  height: 9em;
 }
 .end-pic {
   background-image: url("../images/rhvd9wlno_i-niklas-veenhuis.jpg");
-  height: 6em;
+  background-size: 125%;
+  background-repeat: no-repeat;
+  height: 9em;
 }
 .nav {
   display: flex;
