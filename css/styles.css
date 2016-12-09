@@ -111,21 +111,33 @@ a:hover { color: #0FA0CE; }
   height: 9em;
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
+  line-height: 70px;
 }
 .nav > div {
   display: inline;
-  line-height: 70px;
-  top: 35px;
+  top: 0px;
+  padding: 3px;
 }
 
 /* Custom styles */
-#Glogo { width: 85px;
-  padding-right: 10px;
- }
-#Search { width: 20px; }
+.nav-left {
+}
+
+.nav-right > img {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  transform: translate(0,-50%);
+}
+#Googol {
+  width: 85px;
+}
+
 #Menu { width: 30px; }
+#Search {
+  width: 20px;
+  transform: translate(-200%,-50%);
+ }
 
 
 /* Media Queries */
@@ -142,13 +154,23 @@ a:hover { color: #0FA0CE; }
 /* For devices larger than Mobile S */
 @media screen and (min-width: 321px) {
   .nav {
-    background-color: greenyellow;
+    background-color: #eee;
   }
+  .top-cap {
+    width: 45%;
+    padding: 2em;
+  }
+  .top-cap::after {
+    content: 'Store foot traffic surged on Black Friday.';
+  }
+  h4 {font-size: 2.1em;
+  line-height: 1.8em;
+  font-stretch: expanded;}
 }
 
 /* For devices larger than Tablet */
 @media screen and (min-width: 769px) {
   .nav {
-    background-color: wheat;
+    background-color: #ddd;
   }
 }
