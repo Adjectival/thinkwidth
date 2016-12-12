@@ -68,7 +68,7 @@ a:hover { color: #0FA0CE; }
 }
 
 .top-pic {
-  background-image: url("../images/y0_vfxohayg-wesson-wang.jpg");
+  background-image: url("../images/img1.png");
   background-size: 150%;
   background-position: center top;
   height: 27em;
@@ -90,7 +90,7 @@ a:hover { color: #0FA0CE; }
   padding:0;
 }
 .mid-pic {
-  background-image: url("../images/gwvmbgpp-pq-steinar-la-engeland.jpg");
+  background-image: url("../images/img2.png");
   background-size: 150%;
   background-repeat: no-repeat;
   height: 9em;
@@ -105,7 +105,7 @@ a:hover { color: #0FA0CE; }
   height: 9em;
 }
 .end-pic {
-  background-image: url("../images/rhvd9wlno_i-niklas-veenhuis.jpg");
+  background-image: url("../images/img3.png");
   background-size: 125%;
   background-repeat: no-repeat;
   height: 9em;
@@ -147,8 +147,6 @@ a:hover { color: #0FA0CE; }
   .nav {
     background-color: white;
   }
-
-
 }
 
 /* For devices larger than Mobile S */
