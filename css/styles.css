@@ -6,10 +6,8 @@
   box-sizing: border-box;
   margin: 0;
   padding:0;
-  border: 1px dotted firebrick;
+  /*border: 1px dotted firebrick;*/
 }
-
-/** {border: 1px dotted blue;}*/
 
 /* Base Styles */
 html {
@@ -32,32 +30,25 @@ li {
   color: #222;
   padding: 0px 10px 0px 10px;
 }
-h1, h2, h3 {
-  font-family: 'Roboto';
-  /*margin-top: 0;
-  margin-bottom: 0em;*/
-  /*color: #eee;*/
-  }
-h3 {
-  color: #666;
-  /*display: inline;*/
-}
-span {
-  color: #999;
-}
-h4 {font-size: 1.4em;
-line-height: 1.4em;
-font-stretch: expanded;}
-h5 {font-size: 1.2em;
-line-height: 1.2em;
-font-stretch: expanded;}
-h4, h5, h6 {font-family: 'Source Sans Pro';}
+h1, h2, h3 { font-family: 'Roboto'; }
+h3 { color: #666; }
+span { color: #999; }
 
+h4, h5, h6 { font-family: 'Source Sans Pro'; }
+h4 {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-stretch: normal;
+}
+h5 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-stretch: expanded;
+}
 a { color: #1EAEDB; }
 a:hover { color: #0FA0CE; }
 
 /*Layout*/
-
 .nav {
   background: #fff;
   height: 70px;
@@ -65,12 +56,10 @@ a:hover { color: #0FA0CE; }
   margin: 0px;
   z-index: 1000;
 }
-
 .top-box {
   padding: 0;
   z-index: 0;
 }
-
 .top-pic {
   background-image: url("../images/img1.png");
   background-size: 150%;
@@ -81,10 +70,11 @@ a:hover { color: #0FA0CE; }
 }
 .top-cap {
   position: absolute;
-  bottom: 2em;
-  left: 5%;
-  width: 90%;
-  padding: 1em;
+  bottom: 1em;
+  left: 5vw;
+  width: 45%;
+  border: 0px;
+  padding-left: 5%;
   background-color: #0e1c5e;
   z-index: 100;
 }
@@ -100,14 +90,13 @@ a:hover { color: #0FA0CE; }
   height: 9em;
   padding: 0;
 }
-.mid-cap {
-  background-color: #995e8d;
+.mid-cap, .end-cap {
   height: 9em;
+  padding-top: 0.8em;
 }
-.end-cap {
-  background-color: #4e4a52;
-  height: 9em;
-}
+.mid-cap { background-color: #995e8d; }
+.end-cap { background-color: #4e4a52; }
+
 .end-pic {
   background-image: url("../images/img3.png");
   background-size: 125%;
@@ -146,32 +135,25 @@ a:hover { color: #0FA0CE; }
 
 
 /* Media Queries */
-/* For devices Mobile S or smaller */
 
-@media screen and (max-width: 320px) {
-  .nav {
-    background-color: white;
+@media screen and (min-width: 320px) {
+  .top-cap {
+    padding: 2em;
   }
 }
-
-/* For devices larger than Mobile S */
-@media screen and (min-width: 321px) {
-  .nav {
-    background-color: #eee;
-  }
-  .top-cap {
-    width: 45%;
-    padding: 2em;
+@media screen and (min-width: 728px) {
+  h4 {
+    font-size: 2.1em;
+    line-height: 1.8em;
+    font-stretch: expanded;
   }
   .top-cap::after {
     content: 'Store foot traffic surged on Black Friday.';
   }
-  h4 {font-size: 2.1em;
-  line-height: 1.8em;
-  font-stretch: expanded;}
+  .mid-cap, .end-cap {
+    padding-top: 1.5em;
+  }
 }
-
-/* For devices larger than Tablet */
 @media screen and (min-width: 1199px) {
   #Hamburger {
     display: none;
@@ -182,5 +164,11 @@ a:hover { color: #0FA0CE; }
   }
   .top-pic {
     height: 100vh;
+  }
+  .row {
+    height: 50vh;
+  }
+  .row > div {
+    height: 25vh;
   }
 }
