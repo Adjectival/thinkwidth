@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding:0;
+  border: 1px dotted firebrick;
 }
 
 /** {border: 1px dotted blue;}*/
@@ -39,6 +40,7 @@ h1, h2, h3 {
   }
 h3 {
   color: #666;
+  /*display: inline;*/
 }
 span {
   color: #999;
@@ -170,7 +172,7 @@ a:hover { color: #0FA0CE; }
 }
 
 /* For devices larger than Tablet */
-@media screen and (min-width: 1141px) {
+@media screen and (min-width: 1199px) {
   #Hamburger {
     display: none;
   }
@@ -178,5 +180,7 @@ a:hover { color: #0FA0CE; }
     list-style-type: none;
     display: inline;
   }
-
+  .top-pic {
+    height: 100vh;
+  }
 }
