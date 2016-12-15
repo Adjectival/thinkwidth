@@ -4,7 +4,7 @@
 _an Epicodus student Project, December 2016_
 
 ### Description
-Think Width google closely copies the flexible, responsive layout of thinkwithgoogle.com as a demonstration of my front-end design chops; no infringement intended, school project closely copies the flexible, responsive layout of [Think with Google](https://www.thinkwithgoogle.com/) as a demonstration of my front-end design chops.
+Think Width google closely copies the flexible, responsive layout of [Think with Google](https://www.thinkwithgoogle.com/) as a demonstration of my front-end design chops. No infringement intended, school project.
 
 
 
@@ -19,9 +19,6 @@ Think Width google closely copies the flexible, responsive layout of thinkwithgo
  - I want bespoke media queries.
 
  - I want page layout to respond to at least three different screen sizes.
-   - Mobile S (320px width)
-   - Tablet (768px width)
-   - Laptop (1024px width)
 
  - I do not need to see the same styling/code techniques as the actual website, nor the same fonts/assets.
 
